@@ -1,0 +1,51 @@
+{
+    "name": "<Your Full Name>",
+    "title": "<Your Professional Title>",
+    "location": "<City, State>",
+    "contact": {
+        "phone": "<Your Phone Number>",
+        "email": "<Your Email Address>",
+        "linkedin": "<Your LinkedIn Profile URL>",
+        "github": "<Your GitHub Profile URL>"
+    },
+    "summary": "<A brief professional summary highlighting your expertise and career goals>",
+    "skills": [
+        "<Skill 1>",
+        "<Skill 2>",
+        "...",
+        "<Skill N>"
+    ],
+    "experience": [
+        {
+            "company": "<Company Name>",
+            "location": "<City, State or Remote>",
+            "role": "<Your Role>",
+            "dates": "<Start Date – End Date>",
+            "highlights": [
+                "<Key achievement or responsibility 1>",
+                "<Key achievement or responsibility 2>",
+                "...",
+                "<Key achievement or responsibility N>"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "<Project Name>",
+            "description": "<Brief description of the project, technologies used, and your contributions>"
+        }
+    ],
+    "education": [
+        {
+            "degree": "<Degree or Certification>",
+            "institution": "<Institution Name>",
+            "dates": "<Start Date – End Date>"
+        }
+    ],
+    "additional_experience": [
+        "<Additional experience or volunteer work 1>",
+        "<Additional experience or volunteer work 2>",
+        "...",
+        "<Additional experience or volunteer work N>"
+    ]
+}
