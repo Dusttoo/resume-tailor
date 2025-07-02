@@ -1,0 +1,33 @@
+Gradient AI: 
+
+Gradient AI is revolutionizing Group Health and P&C insurance with AI-powered solutions that help insurers predict risk more accurately, improve profitability, and automate underwriting and claims. Our SaaS platform taps into one of the industry's largest data lakes—tens of millions of policies and claims—to deliver deep, actionable insights. Trusted by leading carriers, MGAs, TPAs, and self-insured employers, Gradient AI has grown rapidly since our founding in 2018. Backed by $56M in Series C funding, we're scaling fast—and it's an exciting time to join the team.
+
+About the Role: 
+
+If you want to work on cutting edge technology with friendly, intelligent people in a highly collaborative environment, then Gradient AI is the right place for you. We're looking for a Full-Stack Software Engineer to join our team and help build scalable, client-facing applications. The ideal candidate is a life-long learner who knows Python, with strong analytical skills and an interest in the insurance industry.
+
+How you will make an impact:
+
+Build and maintain client-facing web applications using React for the front end and Flask for the back end.
+Collaborate with the product team to design, develop, and deploy new features and functionality for our web apps and SaaS products.
+Develop and maintain APIs that integrate seamlessly with front-end interfaces and support client needs.
+Work closely with our data science and data engineering teams to build robust data pipelines and workflows.
+Develop intuitive dashboards and business intelligence tools that help our clients make data-driven decisions.
+
+Skills needed to succeed:
+
+5+ years of experience as a full-stack developer, with deep expertise in React (component-based architecture, state management, hooks) and Python (Flask, API development).
+Strong experience in JavaScript/TypeScript and modern front-end technologies like Vite.
+Working knowledge of Linux-based systems, including shell scripting, and CLI tools.
+Proficiency with relational databases, including schema design, query optimization, and performance tuning.
+Experience with CI/CD pipelines and containerization technologies like Docker and Kubernetes.
+A high degree of organization and the ability to manage multiple projects simultaneously while meeting deadlines.
+
+What We Offer:
+
+A fun, team-oriented startup culture. 
+Generous stock options - we all get to own a piece of what we're building. 
+Unlimited vacation days. 
+Flexible schedule that supports working from home. 
+Full benefits package includes medical, dental, vision, 401k, paid paternal leave, and more. 
+Ample opportunities to learn and take on new responsibilities. 

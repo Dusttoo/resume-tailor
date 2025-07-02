@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Cover Letter – {{ profile.name }}</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <p>{{ data.date }}</p>
+        <p>{{ data.greeting }}</p>
+        {% for para in data.body %}
+        <p>{{ para }}</p>
+        {% endfor %}
+        <p>{{ data.closing }}</p>
+        <p>{{ data.signature }}</p>
+    </div>
+</body>
+
+</html>

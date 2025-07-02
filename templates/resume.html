@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ profile.name }} – Resume</title>
+    <link rel="stylesheet" type="text/css" href="dep/normalize.css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="dep/Font-Awesome/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body lang="en">
+
+    <section id="main">
+        <div class="container">
+
+            <div class="header">
+                <!-- Header -->
+                <h1>{{ profile.name }}</h1>
+                <div class="subtitle">{{ profile.title }}</div>
+                <div class="subtitle">{{ profile.location }}</div>
+                <div class="contact">
+                    {% if profile.contact.email %}<span><a href="mailto:{{ profile.contact.email }}">{{
+                            profile.contact.email }}</a> | </span>{% endif %}
+                    {% if profile.contact.phone %}<span>{{ profile.contact.phone }} | </span>{% endif %}
+                    {% if profile.contact.website %}<span><a href="{{ profile.contact.website }}">Website</a> |
+                    </span>{% endif %}
+                    {% if profile.contact.github %}<span><a href="{{ profile.contact.github }}">GitHub</a> | </span>{%
+                    endif %}{% if profile.contact.linkedin %}<span><a
+                            href="{{ profile.contact.linkedin }}">LinkedIn</a></span>{% endif %}
+                </div>
+            </div>
+            <hr class="header-separator" />
+
+            <!-- Summary -->
+            <div class="section">
+                <h2>Summary</h2>
+                <p>{{ data.summary }}</p>
+            </div>
+
+            <!-- Experience -->
+            <section class="main-block">
+                <h2><i class="fa fa-suitcase"></i> Experience</h2>
+                {% for job in data.experience %}
+                {% set parts = job.dates.split('–') %}
+                <section class="blocks">
+                    <div class="date">
+                        <span>{{ parts[0] }}</span><span>{{ parts[1] if parts|length > 1 else '' }}</span>
+                    </div>
+                    <div class="decorator"></div>
+                    <div class="details">
+                        <header>
+                            <h3>{{ job.title }}</h3>
+                            <span class="place">{{ job.company }}</span>
+                            <span class="location">{{ job.location or '' }}</span>
+                        </header>
+                        <div>
+                            <ul>
+                                {% for bullet in job.bullets %}
+                                <li>{{ bullet }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                {% endfor %}
+            </section>
+
+            <!-- Projects -->
+            <section class="main-block">
+                <h2><i class="fa fa-folder-open"></i> Projects</h2>
+                {% for proj in data.projects %}
+                <section class="blocks">
+                    <div class="date"><span>{{ proj.date or '' }}</span></div>
+                    <div class="decorator"></div>
+                    <div class="details">
+                        <header>
+                            <h3>{{ proj.name }}</h3>
+                        </header>
+                        <div>
+                            <p>{{ proj.description }}</p>
+                        </div>
+                    </div>
+                </section>
+                {% endfor %}
+            </section>
+        </div>
+    </section>
+    <aside id="sidebar">
+        <div class="side-block" id="contact">
+            <h1>Education</h1>
+            {% for edu in data.education %}
+            <ul>
+                <li>{{ edu.degree }},</li>
+                <li>{{ edu.institution }} <small>({{ edu.year }})</small></li>
+            </ul>
+            {% endfor %}
+
+        </div>
+        <div class="side-block" id="certifications">
+            <h1>Certifications</h1>
+            <ul>
+                {% for cert in data.certifications %}
+                <li>{{ cert.name }} – {{ cert.issuing_organization }} ({{ cert.date }})</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="side-block" id="skills">
+            <h1>Skills</h1>
+            <ul>
+                {% for skill in data.skills %}<li>{{ skill }}</li>{% endfor %}
+            </ul>
+        </div>
+
+    </aside>
+</body>
+
+</html>
